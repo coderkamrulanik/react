@@ -2,36 +2,22 @@ import React, {Component} from 'react';
 import './App.css';
 import First from './First/First'
 import Counter from './Counter/Counter'
+import State from './State/State';
 
 
 class App extends Component {
 
 
 
-  state={
-    persons: [
-      {name: 'anik', email: 'kamrul@gmail.com', address:'dhaka'},
-      {name: 'hasan', email: 'hasan@gmail.com', address:'tangail'},
-      {name: 'kamrul', email: 'anik@gmail.com', address:'mirzapur'}
-    ]
-  }
 
   render(){
   return (
     <div className="App">
      
-{this.state.persons.map((people,index)=>{
-return <First
-key={index}
-name={people.name}
-email={people.email}
-address={people.address}
 
-/>
-})}
 
 <Counter></Counter>
-
+<State></State>
 
     </div>
   );
