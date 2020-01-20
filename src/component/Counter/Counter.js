@@ -42,7 +42,7 @@ increase =()=>{
 
     })
 
-    if(this.state.count<5){
+    if(this.state.count<=5){
         this.setState({
             color:'red'
         })
