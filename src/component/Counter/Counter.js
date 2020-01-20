@@ -7,7 +7,7 @@ constructor(props){
     super(props)
 
     this.state={
-        count: 10
+        count: 13
     }
 }
 
