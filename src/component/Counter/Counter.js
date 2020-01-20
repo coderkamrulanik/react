@@ -32,7 +32,7 @@ render(){
 <div>
    
 <h1><button onClick={this.decrease}> - </button> {this.state.count} <button onClick={this.increase}> + </button></h1>
-<h2>Hello</h2>
+<h3>This is me</h3>
 </div>
     ) 
 }
