@@ -1,34 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 import First from './First/First'
-import Counter from './Counter/Counter'
+import Counter1 from './Counter/Counter'
 
+function App() {
 
-class App extends Component {
-
-
-
-  state={
-    persons: [
-      {name: 'anik', email: 'kamrul@gmail.com', address:'dhaka'},
-      {name: 'hasan', email: 'hasan@gmail.com', address:'tangail'},
-      {name: 'kamrul', email: 'anik@gmail.com', address:'mirzapur'}
-    ]
-  }
-
-  render(){
+  let p1= 'Anik'
   return (
     <div className="App">
      
-{this.state.persons.map((people,index)=>{
-return <First
-key={index}
-name={people.name}
-email={people.email}
-address={people.address}
+<First name="Kamrul" email="kamrulanikcse@gmail.com" address="Tangail"></First>
+<First name="Hasan" email="kamrulanik@gmail.com" address="Tangail"></First>
+<First name="Anik" email="beforsure@gmail.com" address="Dhaka"></First>
 
-/>
-})}
 
 <Counter></Counter>
 
@@ -36,5 +20,5 @@ address={people.address}
     </div>
   );
 }
-}
+
 export default App;
